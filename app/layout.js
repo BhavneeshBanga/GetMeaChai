@@ -29,7 +29,6 @@ export default function RootLayout({ children }) {
         <SessionWrapper>
 
         <Navbar />
-
         {/* Background wrapper — only affects the main content area */}
         <div className="relative min-h-screen overflow-hidden">
 

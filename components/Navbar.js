@@ -40,7 +40,9 @@ const Navbar = () => {
                                     <Link href="/settings" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:bg-gray-500 rounded">Settings</Link>
                                 </li>
                                 <li>
-                                    <Link href="/earnings" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:bg-gray-500 rounded">Earnings</Link>
+                                    console.log(session);
+                                    
+                                    <Link href={`/${session.user.name}`} className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:bg-gray-500 rounded">Your Page</Link>
                                 </li>
                                 <li>
                                     <Link href="/logout" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading hover:bg-red-300 rounded">Sign out</Link>
